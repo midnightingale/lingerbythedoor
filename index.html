@@ -2,21 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/lingerbythedoor/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>linger</title>
     <script>
-      // Handle SPA redirect from 404.html
+      // Handle SPA redirect from 404.html (GitHub Pages)
       (function() {
         const query = window.location.search;
         if (query.startsWith('?p=')) {
           const path = decodeURIComponent(query.slice(3));
-          window.history.replaceState(null, '', '/lingerbythedoor' + path);
+          window.history.replaceState(null, '', path);
         }
       })();
     </script>
-    <script type="module" crossorigin src="/lingerbythedoor/assets/index-BZTcCZV5.js"></script>
-    <link rel="stylesheet" crossorigin href="/lingerbythedoor/assets/index-4oGcREh7.css">
+    <script type="module" crossorigin src="/assets/index-BZTcCZV5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-4oGcREh7.css">
   </head>
   <body>
     <div id="root"></div>
