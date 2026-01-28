@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/lingerbythedoor/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>linger</title>
+    <script>
+      // Handle redirect from 404.html
+      (function() {
+        const q = window.location.search;
+        if (q.startsWith('?p=')) {
+          window.history.replaceState(null, '', decodeURIComponent(q.slice(3)));
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/lingerbythedoor/assets/index-CXdbYNVe.js"></script>
     <link rel="stylesheet" crossorigin href="/lingerbythedoor/assets/index-CKSiEA_z.css">
   </head>
